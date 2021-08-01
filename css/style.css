@@ -28,12 +28,15 @@ a {
   list-style: none;
 }
 h2,
+h3,
+p,
 ul {
   margin: unset;
+  padding: unset;
 }
 
 .container {
-  width: 1230px;
+  width: 120 0px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
@@ -131,21 +134,21 @@ ul {
 .hero {
   background-color: var(--hero-footer-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
-  margin: 0px;
-  padding-top: 200px;
-  padding-bottom: 30px;
-  padding-left: 250px;
-  padding-right: 250px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   color: var(--white-color);
   text-align: center;
   text-transform: uppercase;
+
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .button-primary {
@@ -156,26 +159,26 @@ ul {
   line-height: 1.9;
   color: var(--white-color);
   cursor: pointer;
-}
 
-.button-primary:hover,
-.button-primary:focus {
-  color: var(--main-text-color);
-}
-.button-primary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid #000000;
 
-  margin-bottom: 200px;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/*block description*/
+.button-primary:hover,
+.button-primary:focus {
+  color: var(--main-text-color);
+}
 
+/*block description*/
+.description {
+  padding-top: 94px;
+}
 .title-description {
   font-weight: 700;
   font-size: 14px;
@@ -190,16 +193,15 @@ ul {
 }
 
 .description-list {
-  display: inline-flex;
+  display: flex;
   padding: unset;
-  margin-top: 94px;
-  margin-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
 }
 .description-list .descrption:not(:last-child) {
   margin-right: 30px;
+}
+.descrption-item {
+  width: 270px;
 }
 
 /* Our work*/
@@ -214,28 +216,23 @@ ul {
 }
 .our-work {
   display: block;
-}
-.work {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .work-list {
   display: flex;
   padding: unset;
   margin: unset;
+  justify-content: space-between;
 }
 .work-list .work-item:not(:last-child) {
   margin-right: 30px;
   display: block;
 }
 
-.work-item {
-  justify-content: space-between;
-}
 /*Our team*/
-.title-work-team {
-  padding-top: 94px;
-}
+
 .title-name {
   font-weight: 500;
   font-size: 16px;
@@ -248,7 +245,7 @@ ul {
   line-height: 1.19;
 }
 .our-team {
-  padding: auto;
+  padding-top: 94px;
   background-color: var(--button-color);
 }
 .team {
@@ -265,22 +262,31 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.person {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /* Footer*/
 .foot {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer {
   background-color: var(--hero-footer-background-color);
 }
+
 .accent-footer {
   color: var(--white-color);
 }
+
 .address {
   align-content: space-between;
   font-style: inherit;
+  margin-top: 20px;
 }
+
 .address-item {
   color: var(--white-color);
   font-size: 14px;
@@ -304,29 +310,31 @@ ul {
 }
 
 /* Странница Portfolio*/
-.portfolio {
+
+.content {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .button-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
+
 .button-list .item-btn:not(:last-child) {
   margin-right: 8px;
 }
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  padding: 0 0 94px 0;
   margin-top: -30px;
   margin-left: -30px;
 }
+
 .portfolio-item {
   background: var(--white-color);
-
-  border: 1px solid #eeeeee;
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 30px * 3) / 3);
@@ -345,6 +353,7 @@ ul {
   color: var(--title-text-color);
   text-align: center;
 }
+
 .button-secondary:hover,
 .button-secondary:focus {
   color: var(--white-color);
@@ -354,21 +363,20 @@ ul {
 .picture {
   width: -webkit-fill-available;
 }
+.project-item {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
 .title-project {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--title-text-color);
-
-  margin: 20px 24px 4px 24px;
-  min-width: 322px;
-  align-content: center;
 }
+
 .text-project {
   font-size: 16px;
   line-height: 1.9;
-
-  margin: 4px 24px 20px 24px;
-  min-width: 322px;
-  align-content: center;
 }
