@@ -22,6 +22,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:active {
+  color: var(--link-text-color);
+}
 
 /* УТИЛИТА*/
 .list {
@@ -36,7 +39,7 @@ ul {
 }
 
 .container {
-  width: 120 0px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
@@ -88,11 +91,13 @@ ul {
   line-height: 1.15;
   color: var(--title-text-color);
 }
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -102,7 +107,6 @@ ul {
 .nav-link:hover {
   color: var(--link-text-color);
 }
-
 .nav-link:active {
   color: var(--link-text-color);
 }
@@ -246,12 +250,12 @@ ul {
 }
 .our-team {
   padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--button-color);
 }
 .team {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
   padding-left: unset;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -268,13 +272,11 @@ ul {
 }
 
 /* Footer*/
-.foot {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 
 .footer {
   background-color: var(--hero-footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .accent-footer {
@@ -361,7 +363,9 @@ ul {
 }
 
 .picture {
+  display: block;
   width: -webkit-fill-available;
+  max-width: 100%;
 }
 .project-item {
   padding: 20px 24px;
